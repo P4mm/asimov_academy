@@ -5,10 +5,10 @@ import plotly.express as px
 st.set_page_config(layout="wide")
 
 # Use caminhos relativos para os arquivos no ambiente virtual
-df_reviews = pd.read_csv(r"C:\Users\User\Desktop\asimov_dash\customer_reviews.csv")
+df_reviews = pd.read_csv(r"C:\Users\User\Desktop\asimov_academy\customer_reviews.csv")
 
 # Forneça o caminho absoluto para o arquivo com espaços
-df_top100_books = pd.read_csv(r"C:\Users\User\Desktop\asimov_dash\Top-100 Trending Books.csv")
+df_top100_books = pd.read_csv(r"C:\Users\User\Desktop\asimov_academy\Top-100 Trending Books.csv")
 
 price_max = float(df_top100_books["book price"].max())
 price_min = float(df_top100_books["book price"].min())
